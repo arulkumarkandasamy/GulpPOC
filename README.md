@@ -69,17 +69,31 @@ To complete the project set up run the commands given below in 'Generating bower
 		e2e folder in project root with js file name extended with .spec
 
 		
-# Building the project from the code base
+# Setting up the project from the code base
+
+## Setting up dependencies
+
+	Dwonload and install node from below url
+	https://nodejs.org/en/download/
+	
+	set nodejs and npm path like below
+	C:\Users\ARUL KUMAR\AppData\Roaming\npm
+	install git and set path
+
+	Run `npm install -g gulp gulp-cli bower`
+
+	Run `npm install`
+	Run `bower install`
 
 ## Generating bower and npm dependencies
 
-Run `bower install` and `npm install`
+	Run `bower install` and `npm install`
 
 ## Build & development
 
-Run `gulp` for building and `gulp serve` for preview.
+	Run `gulp` for building and `gulp serve` for preview.
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+	Running `grunt test` will run the unit tests with karma.
 
