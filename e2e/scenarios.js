@@ -71,6 +71,7 @@ describe('PhoneCat App', function() {
   });
 });
 
+/*
 describe('Phone detail view', function() {
 
     beforeEach(function() {
@@ -83,3 +84,4 @@ describe('Phone detail view', function() {
     });
 
 });
+*/

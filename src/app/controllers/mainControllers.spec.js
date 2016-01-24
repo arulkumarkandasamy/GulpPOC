@@ -40,7 +40,7 @@ describe('PhoneDetailController', function(){
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('phones/xyz.json').respond({name:'phone xyz'});
 
-      //$routeParams.phoneId = 'xyz';
+      $routeParams.phoneId = 'xyz';
       scope = $rootScope.$new();
       ctrl = $controller('PhoneDetailController', {$scope: scope});
     }));

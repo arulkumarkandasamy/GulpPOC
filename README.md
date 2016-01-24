@@ -46,18 +46,29 @@ To complete the project set up run the commands given below in 'Generating bower
 	source code optimization (uglify, minify)
 	unit test using Karma with PhantomJS
 	
-13. Gulp protractor is not working as it is looking for selenium-server-standalone
+13. running gulp protractor
 
-    Tried below for running protractor tests from url http://floatincode.net/post/running-protractor-selenium-tests-with-grunt
-	npm install protractor --save
-	Add below in package.json
-	"scripts": {
-		"protractor": "node node_modules/protractor/bin/webdriver-manager update"
-	}
-	npm run-script protractor
-	It seems we need to install selenium-server-standalone-2.47.1.jar 
+	npm install selenium-standalone@latest -g
+	selenium-standalone install
+	selenium-standalone start 
+	gulp protractor
 	
-14. For further developing project add source files in below path
+	Standalone selenium driver has built in drivers for firefox, chrome and ie
+	
+14. Using Chrome / Firefox with protractor
+
+	In protractor.conf.js set the browser as below
+	capabilities: {
+    'browserName': 'firefox'
+  }
+  capabilities: {
+    'browserName': 'chrome'
+  }
+	With firefox issues found due to below reason
+	The version of Selenium Server does not know how to work with the newer version of Firefox. You need to download a newer version of the Selenium Server
+	that supports the newer version of Firefox.
+
+15. For further developing project add source files in below path
 		js  - src\app\
 		css - src\app\
 		img - src\assets\images
